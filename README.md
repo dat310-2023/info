@@ -5,8 +5,8 @@ This repository is for the 2032 spring edition of the DAT310 Web programming cou
   - **Intro**: 
   - Introduction [slides](slides/2023-Course_info.pdf)
   - [how to hand in assignments on GitHub](quickfeed.md)
-  - [Quickfeed](https://uis.itest.run)
-  - [Discord server](https://discord.gg/wBp8s8uY)
+  - [Quickfeed](https://uis.itest.run)x
+  - [Discord server](https://discord.gg/kJzYN82qXt)
   - [List of useful resources](Resources.md)
   - [Assignments](https://github.com/dat310-2023/assignments)
   
