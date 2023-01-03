@@ -5,10 +5,11 @@ This repository is for the 2032 spring edition of the DAT310 Web programming cou
   - **Intro**: 
   - Introduction [slides](slides/2023-Course_info.pdf)
   - [how to hand in assignments on GitHub](quickfeed.md)
-  - [Quickfeed](https://uis.itest.run)x
+  - [Quickfeed](https://uis.itest.run)
   - [Discord server](https://discord.gg/kJzYN82qXt)
   - [List of useful resources](Resources.md)
-  - [Assignments](https://github.com/dat310-2023/assignments)
+  - [Assignments](#assignments)
+  - [Zoom link](https://stavanger.zoom.us/j/61226439451?pwd=RHdaclpRdjl1OGhtc0F2dTIwek9UQT09) (Passcode: 820254)
   
 
 ## Schedule 
@@ -46,3 +47,15 @@ This is a tentative schedule and will be subject to changes.
 |   15 |       MA | No lecture (Easter) | |
 |   15 |       FR | Guest lecture | |
 
+## Assignments
+
+To see and handin assignments you need to complete these steps:
+1. Create a github user.
+2. Join the course on [Quickfeed](https://uis.itest.run)
+3. Wait for manual approval.
+4. Join the github organization [dat310-2023](https://github.com/dat310-2023)
+
+You can then view assignments at [here](https://github.com/dat310-2023/assignments).
+
+### First assignment:
+To allow you to start the first assignment right away, you can see it in the `assignment-1` [folder](assignment-1/)
