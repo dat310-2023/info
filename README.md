@@ -13,7 +13,14 @@ This repository is for the 2032 spring edition of the DAT310 Web programming cou
   
 
 ## Schedule 
- 
+| Day | Hour |Room| |
+|-----|------|----|-|
+|Mon  |8 - 12|E454|Lab|
+|Mon  |12 - 14|A101|Forelesning|
+|Mon  |16 - 18|E454|Lab|
+|Fre  |8 - 10|E102|Forelesning|
+
+
 This is a tentative schedule and will be subject to changes.
 
 | Week | Lecture | Topic                 | Resources                                                                                                                                                                                                                                                                                      |
