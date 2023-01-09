@@ -77,7 +77,7 @@ This section give step-by-step instructions on how to submit assignments.
 
 2. To get started, decide on a suitable location for your workspace for the course.
    In this guide we will use `$HOME/dat310` as the workspace. Do the following
-   making sure to replace `username` with your GitHub user name:
+   making sure to replace `username` with your GitHub user name: 
 
    ```console
    mkdir $HOME/dat310
@@ -89,6 +89,16 @@ This section give step-by-step instructions on how to submit assignments.
    ```
 
    (you may be asked for username and password on GitHub above.)
+
+   If you have `ssh` set up you can do the following:
+   ```console
+   mkdir $HOME/dat310
+   cd $HOME/dat310
+   git clone git@github.com:dat310-2023/username-labs.git assignments
+   cd assignments
+   git remote add course-assignments git@github.com:dat310-2023/assignments.git
+   git pull course-assignments main
+   ```
 
 3. To avoid having to type your password every time, follow these
    [steps](github-ssh.md)
