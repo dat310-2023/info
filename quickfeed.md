@@ -96,7 +96,7 @@ This section give step-by-step instructions on how to submit assignments.
    cd $HOME/dat310
    git clone git@github.com:dat310-2023/username-labs.git assignments
    cd assignments
-   git remote add course-assignments git@github.com:dat310-2023/assignments.git
+   git remote add course-assignments 
    git pull course-assignments main
    ```
 
