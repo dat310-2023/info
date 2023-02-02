@@ -25,3 +25,13 @@ ul#playlist li:first-child {
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
 }
+/* added for 3b */
+ul#playlist li {
+    position: relative;
+}
+li>img {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 32px;
+}
