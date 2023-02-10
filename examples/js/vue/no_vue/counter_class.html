@@ -20,14 +20,17 @@
         }
     </style>
     <script>
-        function Counter(){
-            this.count = 0;
-            this.add = function() {
+        class Counter{
+            constructor(){
+                this.count = 0;
+                this.element = initCounterDisplay(this);
+            }
+            add() {
                 this.count += 1;
                 this.element.querySelector(".count")
                     .innerText = this.count;
             }
-            this.element = initCounterDisplay(this);
+            
         }
 
         function initCounterDisplay(that){
