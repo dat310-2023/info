@@ -47,10 +47,12 @@
         }*/
 
         function showPlaylist(){
+            // do sorting and get a new sorted list
             let showlist = dosearch();
 
             let playlistUl = document.getElementById("playlist");
             playlistUl.innerHTML = "";
+            // display songs from search result list
             for (let song of showlist){
                 let li = createListElement(song);
                 playlistUl.appendChild(li);
