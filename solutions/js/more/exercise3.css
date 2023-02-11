@@ -2,6 +2,10 @@ body {
     font-family: Arial, sans-serif;
 }
 
+form > div {
+    margin-bottom: 0.5em;
+}
+
 ul#playlist {
     border: 1px solid #a9a9a9;
     border-radius: 5px;
