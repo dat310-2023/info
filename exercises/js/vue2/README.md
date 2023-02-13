@@ -2,6 +2,14 @@
 
 I recommend to check out the [Vue.js documentation](https://vuejs.org/v2/guide/)
 
+## Exercise #0: List
+
+[Exercise 0](exercise0.html) contains the start of a vue app.
+- Print the list of fruits from data to the screen.
+- Write a function. When `addKiwi` button is clicked, add `"kiwi"` to the list.
+
+![Exercise0](images/exercise0.png)
+
 ## Exercise #1: Logo
 
 [Exercise 1](exercise1.html) contains an input field for color and buttons with differend font-awesome icons.
