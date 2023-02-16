@@ -26,10 +26,10 @@ let gradeFormC = {
     },
     computed: {
         courses: function(){
-            return store.state.courses;
+            return store.courses;
         }, 
         students: function(){
-            return store.state.students;
+            return store.students;
         }
     },
     methods: {

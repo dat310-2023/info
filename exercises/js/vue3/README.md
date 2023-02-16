@@ -1,5 +1,10 @@
 # Vue.js exercises, Part III. (store, routing, CLI)
 
+## Exercise #0: Component events
+
+The file [exercise0.html](exercise0.html) contains the playlist with components.
+Implement the removal of playlist items by emitting and handling an event from the`playlistItem` component.
+
 ## Exercise #1: Vue instance as store
 
 Starting with this [example](../../../examples/js/vue3/gradebook). 

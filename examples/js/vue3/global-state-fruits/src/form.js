@@ -14,7 +14,7 @@ let fruitFormC = {
             <label for="favorite">
                 favorite
             </label>
-        <button v-on:click="add">Add</button>
+        <input type="button" v-on:click="add" value="Add">
         </fieldset>
     </form>
     `,
@@ -25,10 +25,7 @@ let fruitFormC = {
         }
     },
     methods: {  
-        add: function(event){
-            // prevent form submission, since it would refresh page
-            event.preventDefault();
-            
+        add: function(){
             store.addFruit(this.name, this.favorite);
         }
     }

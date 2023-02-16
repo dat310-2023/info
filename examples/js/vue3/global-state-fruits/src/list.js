@@ -3,7 +3,7 @@ let favoriteC= {
     data: function(){
         return {
             // including data fields from the store works (is reactive)
-            fruits: store.fruits,
+            thefruits: store.fruits,
             // using getters from the store inside data, does not work, (not reactive)
             staticfavorites: store.favoriteFruits()
         }
@@ -13,7 +13,7 @@ let favoriteC= {
         favorites: function(){ return store.favoriteFruits()},
         // shorthand: 
         // favorites: ()=> store.favoriteFruits(),
-        // this does not work, normally
+        // this does not work
         staticfavorites2: store.favoriteFruits
     },
     template: `
@@ -26,7 +26,7 @@ let favoriteC= {
     </ul>
     <h1>All fuites</h1>
     <ul>
-        <li v-for="fruit in fruits">
+        <li v-for="fruit in thefruits">
             {{ fruit.name }}
         </li>
     </ul>

@@ -14,7 +14,7 @@ let songListItemC = {
     </li>`,
     methods: {
         remove(){
-        gState.remove(this.song);
+            gState.remove(this.song);
         }
     }
 }

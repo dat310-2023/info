@@ -32,37 +32,36 @@ const grades = [
     { student_no: "333333", course_id : "DAT220", grade: "A" },
     { student_no: "222222", course_id : "DAT310", grade: "A" },
     { student_no: "333333", course_id : "DAT310", grade: "B" },
-    { student_no: "333333", course_id : "DAT320", grade: "A" },
-    { student_no: "111111", course_id : "MAT100", grade: "B" }
+    { student_no: "333333", course_id : "DAT320", grade: "A" }
 ]
 
-let store = {
-    state: Vue.reactive({
-            courses: courses,
-            students: students,
-            grades: grades
-        }),
+class Gradebook {
+    constructor(){
+        this.courses= courses;
+        this.students= students;
+        this.grades= grades;
+    }
     studentGrades(student_no){
-        return this.state.grades.filter(
+        return this.grades.filter(
             grade => grade.student_no === student_no );
-    },
+    }
     courseGrades(course_id){
-        return this.state.grades.filter(
+        return this.grades.filter(
             grade => grade.course_id === course_id );
-    },
+    }
     student(student_no){
-        return this.state.students.find(
+        return this.students.find(
             stud => stud.student_no === student_no );
-    },
+    }
     course(course_id){
-        return this.state.courses.find(
+        return this.courses.find(
             course => course.course_id === course_id );
-    },
+    }
     addGrade(student_no, course_id, grade){
         if (this.student(student_no) &&
             this.course(course_id) &&
             grade){
-                this.state.grades.push({ 
+                this.grades.push({ 
                     student_no: student_no,
                     course_id: course_id,
                     grade: grade
@@ -72,3 +71,5 @@ let store = {
         else console.log("could not validate input");
     }
 }
+
+let store = Vue.reactive(new Gradebook());

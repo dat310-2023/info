@@ -46,7 +46,7 @@ let mainC = {
     </div>
     `,
     data(){
-        return store.state;
+        return store;
     }
 };
 

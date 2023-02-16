@@ -5,11 +5,7 @@ function Song(name, band){
 
 class GState {
     constructor() {
-        this.state = Vue.reactive(
-            {
-                playlist: []
-            }
-        )
+        this.playlist = [];
         this.init();
     }
     add(song) {
@@ -27,12 +23,6 @@ class GState {
         this.add(new Song("My favorite", "This band"));
         this.add(new Song("Second favorite", "Other band"));
     };
-    updateBand(name,newBand){
-        let song = this.state.playlist.find(song=> song.name = name)
-        if (song) {
-            song.band = newBand;
-        }
-    }
 }
 
-let gState = new GState();
+let gState = Vue.reactive(new GState());
