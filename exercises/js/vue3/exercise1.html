@@ -7,7 +7,6 @@
     <!-- Import Vue -->
     <!-- development version, includes helpful console warnings -->
     <script src="https://unpkg.com/vue@3.0.5/dist/vue.global.js"></script>
-    <link rel="stylesheet" href="style.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -102,7 +101,7 @@
         };
     }
     
-    let playlist = Vue.reactive(new Playlist());
+    let store = Vue.reactive(new Playlist());
 
     let playListItemC = {
         props: ['song'],
@@ -155,7 +154,7 @@
     let app = Vue.createApp({
         data(){ 
             return {
-                playlist: playlist
+                playlist: store.list
             }
         },
         methods: {

@@ -5,11 +5,27 @@
 The file [exercise0.html](exercise0.html) contains the playlist with components.
 Implement the removal of playlist items by emitting and handling an event from the`playlistItem` component.
 
-## Exercise #1: Vue instance as store
+## Exercise #1: A global store
 
-Starting with this [example](../../../examples/js/vue3/gradebook). 
-Refactor main, student, and course components to not use `data` but only `computed` properties.
-Verify that the list in the course component is now reactive.
+The file [exercise1.html](exercise1.html) contains the solution for the previous example. 
+Additional it cointains a global store 
+```js
+    class Playlist {
+        constructor() {
+            this.list = [...];
+        }
+        add(song) {
+            ...
+        };
+        remove(song) {
+            ...
+        };
+    }
+    
+    let store = Vue.reactive(new Playlist());
+    ```
+
+Change the implementation of the `remove` and `addSong` methods in the `playListItemC` and `playlistFormC` components, to directly update the global store. Remove events and event handling where possible.
 
 ## Exercise 2: Vue router
 

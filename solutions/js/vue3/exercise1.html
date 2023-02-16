@@ -62,12 +62,11 @@
 </head>
 <body>
 <div id="app">
-    <playlist-form v-on:add-song="addSong"></playlist-form>
+    <playlist-form></playlist-form>
 
     <ul id="playlist">
         <playlist-item v-for="(song, index) in playlist"
-            v-bind:song="song"
-            v-on:remove="remove(index)">
+            v-bind:song="song">
         </playlist-item>
     </ul>
 </div>
@@ -78,6 +77,30 @@
             this.band = band;
        }
     }
+
+    class Playlist {
+        constructor() {
+            this.list = [];
+            this.init();
+        }
+        add(song) {
+            if (song && song.name)
+                this.list.push(song);
+            else
+                throw "Trying to add song without name";
+        };
+        remove(song) {
+            let index = this.list.indexOf(song)
+            if (index > -1)
+                this.list.splice(index, 1);
+        };
+        init() {
+            this.add(new Song("My favorite", "This band"));
+            this.add(new Song("Second favorite", "Other band"));
+        };
+    }
+    
+    let store = Vue.reactive(new Playlist());
 
     let playListItemC = {
         props: ['song'],
@@ -100,7 +123,7 @@
                 this.played++;
             },
             remove: function(){
-                this.$emit('remove');
+                store.remove(this.song);
             }
         }
     
@@ -122,7 +145,7 @@
         methods: {
             addSong: function(){
                 let newSong = new Song(this.newSongName, this.newBandName);
-                this.$emit('add-song', newSong);
+                store.add(newSong);
             }
         }
     }
@@ -130,20 +153,7 @@
     let app = Vue.createApp({
         data(){ 
             return {
-                playlist: [
-                    new Song("My favorite", "This band"),
-                    new Song("Second favorite", "Other band")
-                ]               
-            }
-        },
-        methods: {
-            remove: function(index){
-                if (index > -1) {
-                    this.playlist.splice(index, 1);
-                  }
-            },
-            addSong: function(song){
-                this.playlist.push(song)
+                playlist: store.list
             }
         }
     });
