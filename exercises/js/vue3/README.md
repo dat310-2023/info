@@ -23,7 +23,7 @@ Additional it cointains a global store
     }
     
     let store = Vue.reactive(new Playlist());
-    ```
+```
 
 Change the implementation of the `remove` and `addSong` methods in the `playListItemC` and `playlistFormC` components, to directly update the global store. Remove events and event handling where possible.
 
