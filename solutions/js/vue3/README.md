@@ -33,12 +33,14 @@ But if you add multiple songs with the same name and band, the bug is still pres
 [exercise1_key_id](exercise1_key_id.html) adds a unique field in `Song`, `song.id` which is used as key.
 
 ```js
+let maxId = 0;
+
 class Song{
     constructor(name, band){
         this.name = name;
         this.band = band;
-        this.id=0;
-    }
+        this.id=maxId++;
+   }
 }
 ```
 
