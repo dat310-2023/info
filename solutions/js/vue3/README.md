@@ -59,3 +59,13 @@ This solves the error. *Try this out for yourself*
 
 Adds the number of times a song was played to the global store, instead of making it state in the `songlistItemC` component.
 This avoids the bug without using the `key` attribute.
+
+```js
+class Song{
+    constructor(name, band){
+        this.name = name;
+        this.band = band;
+        this.played = 0;
+   }
+}
+```
