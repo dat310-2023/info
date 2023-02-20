@@ -3,7 +3,7 @@
 ## Exercise 4: Single file components
 
 - Install node.js, including npm. https://nodejs.org/en/download/ 
-- Download the [playlist example](../../../examples/js/vue3/playlist-cli).
+- Download the [playlist example](../../../examples/js/vue_cli/playlist-cli).
 - Run `npm install` in the folder you downloaded. This should create a folder (`node_modules`) including all dependencies.
 - Run `npm run serve` to test the playlist application.
 

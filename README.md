@@ -20,6 +20,7 @@ This repository is for the 2032 spring edition of the DAT310 Web programming cou
 |Mon  |12 - 14|A101|Forelesning|
 |Mon  |16 - 18|E454|Lab|
 |Fre  |8 - 10|E102|Forelesning|
+|Fre  |10 - 12|E454|Lab|
 
 
 This is a tentative schedule and will be subject to changes.
@@ -39,18 +40,18 @@ This is a tentative schedule and will be subject to changes.
 |    6 |       FR | Vue Framework I       | [Slides](slides/6-2-Web-programming-vue-p1.pdf) [examples](examples/js/vue/)  [exercises](exercises/js/vue/)  [solutions](solutions/js/vue/)                                                        |
 |    7 |       MA | Vue Framework II      | [Slides](slides/7-1-Web-programming-vue-p2.pdf) [examples](examples/js/vue2/)  [exercises](exercises/js/vue2/)  [solutions](solutions/js/vue2/)                                    |
 |    7 |       FR | Vue Framework III     |  [Slides](slides/7-2-Web-programming-vue-p3.pdf) [examples](examples/js/vue3/) [exercises](exercises/js/vue3/)  [solutions](solutions/js/vue3/)                                     |
-|    8 |       MA | HTTP                  | [Slides](slides/8-1-Web-programming-HTTP.pdf) [examples](examples/python/http/) [exercises](exercises/python/http/) [solutions](solutions/python/http/)                            |
-|    8 |       FR | Flask I (requests)    | [Slides](slides/8-2-Web-programming-Server-p1.pdf) [examples](examples/python/flask) [exercises](exercises/python/flask1/) [solutions](solutions/python/flask1/)                   |
-|    9 |       MA | Flask II (templates)  | [Slides](slides/9-1-Web-programming-Server-p2.pdf) [examples](examples/python/flask) [exercises](exercises/python/flask2/) [solutions](solutions/python/flask2/)                                    |
-|    9 |       FR | Flask III (database)  | [Slides](slides/9-2-Web-programming-Server-p3.pdf) [examples](examples/python/flask) [exercises](exercises/python/flask3/) [solutions](solutions/python/flask3/)                                    |
-|    10 |       MA | JS Async              | [Slides](slides/10-1-Web-programming-JS-async.pdf) [examples](examples/async/js) [exercises](exercises/async/js) [solutions](solutions/async/js)                                   |
-|   10 |       FR | AJAX                  | [Slides](slides/11-1-Web-programming-AJAX.pdf) [examples](examples/ajax) [exercises](exercises/ajax) [solutions](solutions/ajax)                                                   |
-|   11 |       MA | AJAX & Vue            | [Slides](slides/11-2-Web-programming-AJAX+Vue.pdf) [examples](examples/ajax) [exercises](exercises/ajax) [solutions](solutions/ajax)                                               |
-|   11 |       FR | RESTfull APIs         | [Slides](slides/12-1-Web-programming-Flask-APIs.pdf) [examples](examples/ajax) [exercises](exercises/ajax) [solutions](solutions/ajax)                                                              |
-|   12 |       MA | Flask IV (cookies)    | [Slides](slides/12-2-Web-programming-Server-p4.pdf) [examples](examples/python/flask4) [exercises](exercises/python/flask4) [solutions](solutions/python/flask4)                    |
-|   12 |       FR | Login                 | [Slides](slides/13-1-Web-programming-Server-Login.pdf) [examples](examples/python/flask5) [exercises](exercises/python/flask5) [solutions](solutions/python/flask5)                                                                                                                            |
-|   13 |       MA | Accessibility         | [Slides](slides/15-1-Accessibility.pdf) [examples](examples/a11y/table.html)|
-|   13 |       FR | TBA | |
+|    8 |       MA | JS&Vue Example and CLI    |  [Slides](slides/X-X-Web-programming-vue-example.pdf) [example](examples/js/labyrinth/) [cli examples](examples/js/vue_cli/) [cli exercises](exercises/js/vue_cli/)  [solutions](solutions/js/vue_cli/)                                     |
+|    8 |       FR | HTTP                  | [Slides](slides/8-1-Web-programming-HTTP.pdf) [examples](examples/python/http/) [exercises](exercises/python/http/) [solutions](solutions/python/http/)                            |
+|    9 |       MA | Flask I (requests)    | [Slides](slides/8-2-Web-programming-Server-p1.pdf) [examples](examples/python/flask) [exercises](exercises/python/flask1/) [solutions](solutions/python/flask1/)                   |
+|    9 |       FR | Flask II (templates)  | [Slides](slides/9-1-Web-programming-Server-p2.pdf) [examples](examples/python/flask) [exercises](exercises/python/flask2/) [solutions](solutions/python/flask2/)                                    |
+|    10 |       MA | Flask III (database)  | [Slides](slides/9-2-Web-programming-Server-p3.pdf) [examples](examples/python/flask) [exercises](exercises/python/flask3/) [solutions](solutions/python/flask3/)                                    |
+|    10 |       FR | JS Async              | [Slides](slides/10-1-Web-programming-JS-async.pdf) [examples](examples/async/js) [exercises](exercises/async/js) [solutions](solutions/async/js)                                   |
+|   11 |       MA | AJAX                  | [Slides](slides/11-1-Web-programming-AJAX.pdf) [examples](examples/ajax) [exercises](exercises/ajax) [solutions](solutions/ajax)                                                   |
+|   11 |       FR | AJAX & Vue            | [Slides](slides/11-2-Web-programming-AJAX+Vue.pdf) [examples](examples/ajax) [exercises](exercises/ajax) [solutions](solutions/ajax)                                               |
+|   12 |       MA | RESTfull APIs         | [Slides](slides/12-1-Web-programming-Flask-APIs.pdf) [examples](examples/ajax) [exercises](exercises/ajax) [solutions](solutions/ajax)                                                              |
+|   12 |       FR | Flask IV (cookies)    | [Slides](slides/12-2-Web-programming-Server-p4.pdf) [examples](examples/python/flask4) [exercises](exercises/python/flask4) [solutions](solutions/python/flask4)                    |
+|   13 |       MA | Login                 | [Slides](slides/13-1-Web-programming-Server-Login.pdf) [examples](examples/python/flask5) [exercises](exercises/python/flask5) [solutions](solutions/python/flask5)                                                                                                                            |
+|   13 |       FR | Accessibility         | [Slides](slides/15-1-Accessibility.pdf) [examples](examples/a11y/table.html)|
 |   14 | | No lecture (Easter) | |
 |   15 |       MA | No lecture (Easter) | |
 |   15 |       FR | Guest lecture | |
