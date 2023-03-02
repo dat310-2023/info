@@ -25,6 +25,10 @@
             font-weight: normal;
         }
 
+        #property img {
+            width: 100%;
+        }
+
     </style>
 </head>
 <body>
@@ -34,16 +38,18 @@
         <p>
             {{ property.address }}<br />
             {{ property.phone }}<br />
-            {{ property.email }}<br />
+            {{ property.homepage |urlize }}<br />
         </p>
-        <img src="{{ property.photo }}" width="100%" alt="{{ property.name }}" />
+        <img src="{{ property.photo }}" alt="{{ property.name }}">
+        {# TODO: insert the photo here #}
     </div>
 
     <div id="booking">
+        {# TODO: display the details of the booking in the table below #}
         <table>
             <tr>
                 <td class="rowhead">Your reservation: </td>
-                <td>{{ booking.nights }} night(s), {{ booking.rooms }} room(s)</td>
+                <td>{{ booking.nights}} night(s), {{ booking.rooms }} room(s)</td>
             </tr>
             <tr>
                 <td class="rowhead">Check-in:</td>
@@ -52,18 +58,6 @@
             <tr>
                 <td class="rowhead">Check-out:</td>
                 <td>{{ booking.checkout }}</td>
-            </tr>
-            <tr>
-                <td class="rowhead">Breakfast:</td>
-                <td>Breakfast is {{ "not " if not booking.is_breakfast }}included</td>
-            </tr>
-            <tr>
-                <td class="rowhead">Lunch:</td>
-                <td>Lunch is {{ "not " if not booking.is_lunch }}included</td>
-            </tr>
-            <tr>
-                <td class="rowhead">Dinner:</td>
-                <td>Dinner is {{ "not " if not booking.is_dinner }}included</td>
             </tr>
         </table>
     </div>

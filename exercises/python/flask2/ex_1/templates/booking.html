@@ -38,7 +38,7 @@
         <p>
             {{ property.address }}<br />
             {{ property.phone }}<br />
-            {{ property.email }}<br />
+            {{ property.homepage |urlize }}<br />
         </p>
         {# TODO: insert the photo here #}
     </div>
@@ -56,18 +56,6 @@
             </tr>
             <tr>
                 <td class="rowhead">Check-out:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td class="rowhead">Breakfast:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td class="rowhead">Lunch:</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td class="rowhead">Dinner:</td>
                 <td></td>
             </tr>
         </table>

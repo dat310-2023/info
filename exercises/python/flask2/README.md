@@ -39,7 +39,7 @@ Complete the `ex_4/templates/movies.html` template file such that information ab
 
 Specifically:
 
-  * Sort movies by rating.
+  * Sort movies by rating. [Use a filter](https://jinja.palletsprojects.com/en/3.0.x/templates/#jinja-filters.sort)
   * Show the rank in the first column.
   * The synopsis should be limited to 80 characters. If no synopsis is available display the text "No synopsis is available" in italics.
   * Make the URLs clickable links. The link should open in a new window.
