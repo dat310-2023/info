@@ -30,8 +30,8 @@ def create_table(conn):
     cur = conn.cursor()
     try:
         sql = ("CREATE TABLE postcodes ("
-               "postcode VARCHAR(4), "
-               "location VARCHAR(20), "
+               "postcode text, "
+               "location text, "
                "PRIMARY KEY(postcode))")
         cur.execute(sql)
     except Error as err:

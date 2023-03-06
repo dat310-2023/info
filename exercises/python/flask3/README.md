@@ -1,48 +1,28 @@
-# Server Side Programming exercises (Python, Flask), Part III.
+# Server Side Programming exercises (Flask, JSON, SQLite), Part III.
 
-  * [MySQL Connector/Python](https://dev.mysql.com/doc/connector-python/en/)
-  * [Flask QuickStart](http://flask.pocoo.org/docs/0.12/quickstart/)
-  * [Jinja Templates](http://jinja.pocoo.org/docs/2.10/templates/)
+## Exercise #1: JSON
 
+Folder [ex_1](ex_1) contains the playlist application as a flask app.
+Update the application, to store the playlist in a JSON file.
+The file [fileaccess_json.py](ex_1/fileaccess_json.py) contains some ready utility functions for
+creating, reading and storing a json file.
 
-## Exercise #0: Set up MySQL
+This includes the following steps:
+* Create the JSON file with initial data.
+* Load the file on server start.
+* Write to the file, when the playlist is updated.
 
-* Create a python script that initializes a SQLite database and create a table `movies`.
-* The table should have the following columns:
-    - `imdb_id TEXT` we'll use the IMDB movie IDs as a unique identifier and PRIMARY KEY
-    - `title TEXT`
-    - `year INT`
-    - `rating DOUBLE`
-    - `synopsis TEXT`
-* Add some movies to the table.
-* [movies.sql] holds some SQL scripts you could use.
+## Exercise #2 SQL
 
-Alternatively, you can just execute the `movies.sql` script from the command line:
-```
-$ sqlite3 ./database.db < movies.sql
-```
+Use the [SQLite tryit editor](https://www.sqlitetutorial.net/tryit/) to create a table for the playlist.
+Add 3 songs to the table.
+Write a select statement, that returns all songs from a certain band.
+Check [here](../../../examples/python/sqlite/postcodes.sql) SQL examples from the lecture.
 
-## Exercise #1: Listing movies
+#### Extra: 
+Add a row `played` that contains how often a song was played.
+- Write an update statement, that increments `played` for a given song.
+- Write a `SELECT` statement that returns the two songs played most often.
 
-Update [Exercise 4 from the last lecture on flask](../../../solutions/python/flask2/ex_4) such that movies are loaded from the MySQL database.
+You may want to use [ORDER BY](https://www.sqlitetutorial.net/sqlite-order-by/) and [LIMIT](https://www.sqlitetutorial.net/sqlite-limit/). 
 
-Specifically,
-
-  * Remove the `MOVIES` const; this data will need to be loaded from the database.
-  * Make a connection to the database (make sure the DB and the movies table have been created).
-  * Make a `SELECT` query that returns all movies from the table.
-  * Notice that are not storing the IMDB URLs in the database. You'll need to generate the links to the IMDB movie pages from the `imdb_id` field. Do that in the `movies.html` template file (i.e., not in `app.py`).
-
-The output should look exactly as before:
-![Exercise1](images/exercise1.png)
-
-
-## Exercise #2: Movie details
-
-Generate a separate "details" page for each movie.
-
-  * Remove the links to the IMDB profile page from the movie listing. Instead, make the title of the movie a link to `/movie/<movie_id>`, where `movie_id` refers to the `id` field in the `movies` table.
-  * Make a `layout.html` file that contain a common header and footer. The movie listing and movie details pages should extend `layout.html`.
-
-![Exercise2/1](images/exercise2_1.png)
-![Exercise2/2](images/exercise2_2.png)
