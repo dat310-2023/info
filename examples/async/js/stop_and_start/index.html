@@ -33,7 +33,7 @@
 <body>
     <div class="container">
         <div id="box"></div>
-        <button onclick="colorsequenceCallback()">Toggle</button>
+        <button onclick="toggle()">Toggle</button>
     </div>
     <script>
         let running = false;
@@ -70,6 +70,7 @@
         async function colorsequence(){
             const box = document.getElementById("box");
             // red after 2s blue, after 2s green
+            box.classList.remove("green");
             box.classList.add("red");
             //wait for 2 sec
             await sleep(2000);
@@ -80,6 +81,8 @@
             await sleep(2000);
             await isNotStopped();
             box.classList.replace("blue", "green");
+            running = false;
+            stopped = false;
         }
 
         

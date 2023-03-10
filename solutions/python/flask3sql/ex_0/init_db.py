@@ -5,10 +5,10 @@ def create_table(conn):
     cur = conn.cursor()
     try:
         sql = ("CREATE TABLE movies ("
-               "imdb_id VARCHAR(10) NOT NULL, "
-               "title VARCHAR(40) NOT NULL, "
+               "imdb_id TEXT NOT NULL, "
+               "title TEXT NOT NULL, "
                "year int NOT NULL, "
-               "rating DOUBLE NOT NULL, "
+               "rating REAL NOT NULL, "
                "synopsis TEXT NOT NULL, "
                "PRIMARY KEY(imdb_id))")
         cur.execute(sql)

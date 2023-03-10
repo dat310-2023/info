@@ -41,7 +41,7 @@ def init():
     db = get_db()
     cur = db.cursor()
     try:
-        sql = "CREATE TABLE postcodes (postcode VARCHAR(4), location VARCHAR(20), PRIMARY KEY(postcode))"
+        sql = "CREATE TABLE postcodes (postcode TEXT, location TEXT, PRIMARY KEY(postcode))"
         cur.execute(sql)
         for k, v in postcodes.items():
             sql = "INSERT INTO postcodes (postcode, location) VALUES (?, ?)"
