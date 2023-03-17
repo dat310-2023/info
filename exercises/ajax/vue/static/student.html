@@ -52,7 +52,7 @@
 
 <script>
 
-let app = Vue.crateApp({
+let app = Vue.createApp({
     data: function(){
         return {
             students: [],
@@ -68,6 +68,7 @@ let app = Vue.crateApp({
         }
     }
 })
+app.mount("#app")
 
 </script>
 </body>
