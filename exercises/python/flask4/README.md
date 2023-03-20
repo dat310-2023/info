@@ -39,9 +39,9 @@ The task is to manage the contents of a shopping cart using sessions.
     - If the product to be removed is not in the shopping cart, then return a `400` HTTP error. Otherwise show a success message.
   * Create a custom error page for error `400`.
 
-The [skeleton of the app](ex_2/) is provided, which already includes the HTML parts and a Python class for representing the shopping cart.  Complete the missing parts of `app.py` and make the necessary changes under `templates/`.
+The [skeleton of the app](ex_2/) is provided, which already includes the HTML parts.  Complete the missing parts of `app.py` and make the necessary changes under `templates/`.
 
-  * Hint: save the contents of the shopping cart in the session, that is, the dict that is returned by `contents()`. When loading the cart's contents from the session, initialize the ShoppingCart class with what is stored in the session.
+  * Hint: save the contents of the shopping cart in the session, that is, the dict that is returned by `contents()`. When loading the cart's contents from the session.
 
 ![Exercise2/1](images/exercise2_1.png)
 ![Exercise2/2](images/exercise2_2.png)
