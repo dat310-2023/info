@@ -30,8 +30,8 @@
     <label for="student_no">Student Number</label>
     <input v-if="editing" type="text" id="student_no" v-bind:value="number" readonly>
     <br>
-    <button v-on:click="editStudent" v-if="editing">Edit student</button>
-    <button v-on:click="addStudent" v-else>Add student</button>
+    <button type="button" v-on:click="editStudent" v-if="editing">Edit student</button>
+    <button type="button" v-on:click="addStudent" v-else>Add student</button>
     
 </form>
 
@@ -77,7 +77,7 @@ let app = Vue.createApp({
             let student = this.students[index];
             this.students.splice(index,1);
             this.editing = false;
-            let request = await fetch("/student/" + student.student_no, {
+            let request = await fetch("/students/" + student.student_no, {
                 method: "DELETE",
                 headers: {
                     "Content-Type": "application/json",
@@ -100,7 +100,7 @@ let app = Vue.createApp({
                 student.name = this.name;
             }
             this.editing = false;
-            let request = await fetch("/student/" + student.student_no, {
+            let request = await fetch("/students/" + student.student_no, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json",

@@ -6,7 +6,7 @@ let app = Vue.createApp({
         }
     },
     created: async function(){ 
-        let response = await fetch("/playlist");
+        let response = await fetch("/songs");
         if (response.status == 200){
             let result = await response.json()
             this.playlist = result;
@@ -21,7 +21,7 @@ let app = Vue.createApp({
             this.trysave(song);
         },
         trysave: async function(song){
-            let response = await fetch("/song", {
+            let response = await fetch("/songs/"+song.idx, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -37,12 +37,12 @@ let app = Vue.createApp({
             // set as saving
             song.saving= true;
             console.log(JSON.stringify({name: song.name, band: song.band}));
-let response = await fetch("/song", {
-    method: "DELETE",
-    headers: {
-        "Content-Type": "application/json",
-    },
-    body: JSON.stringify({name: song.name, band: song.band}),
+            let response = await fetch("/song", {
+                method: "DELETE",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({name: song.name, band: song.band}),
 });
             if (response.status == 200){
                 let result = await response.json()

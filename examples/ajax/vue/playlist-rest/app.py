@@ -1,5 +1,5 @@
 from time import sleep
-from flask import Flask, request
+from flask import Flask, request, abort
 import json
 
 app = Flask(__name__)
@@ -10,32 +10,37 @@ def index():
 
 PLAYLIST = [
         { "name": "My favorite",
-          "band": "This band"
+          "band": "This band",
+          "idx": 0,
         },
         { "name": "Second favorite",
-          "band": "This other band"
+          "band": "This other band",
+          "idx": 1
         }
     ]
 
-@app.route("/playlist", methods=["GET"])
-def getplace():
+@app.route("/songs", methods=["GET"])
+def playlist():
     sleep(1)
     return json.dumps(PLAYLIST)
 
-@app.route("/song", methods=["POST"])
+@app.route("/songs", methods=["POST"])
 def addSong():
     sleep(1)
     song = json.loads(request.data)
+    if song.get("name",None) == None or song.get("band",None) == None:
+        abort(400)
+    song["idx"] = len(PLAYLIST)
     if song not in PLAYLIST:
         PLAYLIST.append(song)
     return json.dumps(PLAYLIST)
 
-@app.route("/song", methods=["DELETE"])
-def removeSong():
+@app.route("/songs/<int:idx>", methods=["DELETE"])
+def removeSong(idx):
     sleep(1)
-    song = request.get_json()
-    if song in PLAYLIST:
-        PLAYLIST.remove(song)
+    for song in PLAYLIST:
+        if idx == song.idx:
+            PLAYLIST.remove(song)
         
     return json.dumps(PLAYLIST)
 

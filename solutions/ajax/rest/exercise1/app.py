@@ -38,7 +38,7 @@ def addStudent():
         abort(400, "Missing student_no or name")
     return ""
 
-@app.route("/student/<int:student_no>", methods=["PUT"])
+@app.route("/students/<int:student_no>", methods=["PUT"])
 def updateStudent(student_no):
     data = request.get_json()
     if data.get("name", "") == "":
@@ -53,7 +53,7 @@ def updateStudent(student_no):
         abort(404, "Student not found")
     return "Student {} updated!".format(student_no)
 
-@app.route("/student/<int:student_no>", methods=["DELETE"])
+@app.route("/students/<int:student_no>", methods=["DELETE"])
 def removeStudent(student_no):
     print(student_no)
     print(STUDENTS)

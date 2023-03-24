@@ -36,14 +36,15 @@ img.delete, img.saving {
     top: 5px;
     width: 32px;
 }
+img.saving {
+    width: 16px;
+    padding: 8px;
+}
+
 .retry {
     position: absolute;
     right: 32px;
     top: 5px;
-}
-img.saving {
-    width: 16px;
-    padding: 8px;
 }
 
 .error {
