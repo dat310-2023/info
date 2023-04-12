@@ -3,6 +3,7 @@ hallo hallo
 This repository is for the 2032 spring edition of the DAT310 Web programming course at the University of Stavanger. 
 
   - **Intro**: 
+  - [Exam project](exam/examproject.md)
   - Introduction [slides](slides/2023-Course_info.pdf)
   - [how to hand in assignments on GitHub](quickfeed.md)
   - [git slides](slides/0-Web-programming-Git.pdf)
