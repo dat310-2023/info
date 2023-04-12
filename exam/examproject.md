@@ -65,6 +65,7 @@ You may only use the frameworks listed below. If you are unsure if something is 
 #### Backend:
 Your web server should be Flask. Data should be stored either in an SQLite database or on files.
 You may use the Flask-login plugin, but that is not required. If you do so, note it in your README.md.
+If you want to use a Object-Relational-Mapper (ORM), you may use SQLAlchemy.
 
 You cannot use Flask-forms.
 
