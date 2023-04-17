@@ -56,6 +56,7 @@ This is a tentative schedule and will be subject to changes.
 |   14 | | No lecture (Easter) | |
 |   15 |       MA | No lecture (Easter) | |
 |   15 |       FR | Guest lecture | |
+**There will be no lectures the remaining weeks. Instead, every group should attend an individual meeting with me.**
 
 ## Assignments
 
