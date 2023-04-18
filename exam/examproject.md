@@ -44,6 +44,8 @@ The report must contain the following:
 The report does not need to include all provided functionality, and you can change specific functionality, data and page layout. 
 However, the overall theme for the page is binding.
 
+The report need to be uploaded to your roups github repository.
+
 ## Project delivery
 On the final delivery you should hand in your complete code, and a README.md markdown file.
 Your code should also include a SQLite database or files including example data.
