@@ -27,6 +27,10 @@
 | 28.04. | report | **deadline** |
 | 09.06. | code   | **deadline** |
 
+## Meeting
+
+To discuss your project, you can book a meeting: [here](https://outlook.office.com/bookwithme/user/90a9d200a112481b8677a71c1ab2a195%40uis.no/meetingtype/ZOtYLKR9KEOJaujOjA2wZw2?anonymous)
+
 ## Overview:
 For the exam project you are required to design and implement a complete web application, frontend and backend.
 
