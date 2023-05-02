@@ -99,7 +99,7 @@ You can omit some features, but this will effect grading.
 You are free to implement a Single page application (SPA) or an application with multiple routes using Flask templates.
 
 However, some part of your application needs to be implemented using AJAX calls.
-The endpoints receiving these AJAX calls should be structured according to the principles of a REST API.
+The endpoints receiving these AJAX calls should be structured according to the principles of a REST API, i.e. route names should follow this principle.
 
 For maximum score, your application must be well-organized and separated into components, or base templates, ...
 
