@@ -1,6 +1,7 @@
 # Exam project
 
 - [Exam project](#exam-project)
+  - [Project presentation:](#project-presentation)
   - [Dates](#dates)
   - [Overview:](#overview)
   - [Report](#report)
@@ -20,12 +21,18 @@
   - [Grading](#grading)
   - [Help and plagiarism](#help-and-plagiarism)
 
+##  Project presentation:
+
+Find more info [here](projectpresentation.md)
+
 ## Dates
 | Date   |        |              |
 | ------ | ------ | ------------ |
 | 12.04. | start  |              |
 | 28.04. | report | **deadline** |
-| 09.06. | code   | **deadline** |
+| 09.06. | code   | **deadline** 23:59 |
+| 12.06. | presentation | [info](projectpresentation.md) |
+| 13.06. | presentation | [info](projectpresentation.md) |
 
 ## Meeting
 
