@@ -16,6 +16,7 @@ Besides showing functionality, you should mention the following:
 - What functionality uses AJAX calls?
 - Show an example of form validation.
 - What is stored in the database/files and what in JS/cookies/local storage?
+- Show how the page reacts if you resize the browser window.
 
 It may also be relevant to show how your code is organised. For example talk about one of the following:
 - do you have JS code in different files or classes?
