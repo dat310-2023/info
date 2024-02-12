@@ -16,7 +16,6 @@ I recommend to check out the [Vue.js documentation](https://vuejs.org/v2/guide/)
 Create a Vue.js application such that, 
 - the circle around the big icon always reflects the color from the color input.
 - when a button is clicked, the big icon changes to show the icon from this button.
-- the buttons are displayed using a *v-for* loop.
 
 ![Exercise1](images/exercise1.png)
 
